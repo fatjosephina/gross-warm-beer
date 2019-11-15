@@ -25,6 +25,9 @@ public class RampSupport : MonoBehaviour
     // hardware intenstive physics stuff
     private void FixedUpdate()
     {
-        rigidbody.velocity = new Vector2(0, verticalInput * moveSpeed);
+        if (!GameOver.isGameOver)
+        {
+            rigidbody.velocity = new Vector2(0, verticalInput * moveSpeed);
+        }
     }
 }

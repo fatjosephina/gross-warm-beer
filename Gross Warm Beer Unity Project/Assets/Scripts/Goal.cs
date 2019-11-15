@@ -17,7 +17,7 @@ public class Goal : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Teeeeech!");
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && !GameOver.isGameOver)
         {
             winText.SetActive(true);
             audioSource.Play();
