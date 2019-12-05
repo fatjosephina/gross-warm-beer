@@ -10,3 +10,5 @@ The game will be about a hamster that is trying to eat veggies but has to avoid 
 [Background](https://pixabay.com/photos/straw-animal-bedding-612863/)
 # Other Sprites
 The walls and platform will be recolored in Unity.
+# Menu
+[Menu](https://publicdomainvectors.org/en/free-clipart/Cartoon-little-hamster/74157.html)
