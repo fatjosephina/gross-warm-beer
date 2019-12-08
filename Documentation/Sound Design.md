@@ -1,5 +1,5 @@
 # Sound Design
-I will need a variety of sounds in my game.
+I want happy music, a stink noise for the obstacle, and a crunchy noise for the goal.
 ## Music
 [Royalty-Free Music](https://www.bensound.com/royalty-free-music/track/ukulele)
 ## Reach Goal Noise
