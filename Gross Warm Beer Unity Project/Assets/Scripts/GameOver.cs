@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameOver
+public class GameOver : MonoBehaviour
 {
     public static bool isGameOver = false;
+
+    void Start()
+    {
+        isGameOver = false;
+    }
 }

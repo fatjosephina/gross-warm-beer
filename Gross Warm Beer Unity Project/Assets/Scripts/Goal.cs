@@ -7,6 +7,7 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     public GameObject winText;
+    public GameObject button;
     private AudioSource audioSource;
 
     private void Start()
@@ -20,8 +21,10 @@ public class Goal : MonoBehaviour
         if (collision.tag == "Player" && !GameOver.isGameOver)
         {
             winText.SetActive(true);
+            button.SetActive(true);
             audioSource.Play();
             Debug.Log("Entered goal!");
+            GameOver.isGameOver = true;
         }
     }
 }
