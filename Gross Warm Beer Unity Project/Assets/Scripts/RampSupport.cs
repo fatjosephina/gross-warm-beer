@@ -9,15 +9,21 @@ public class RampSupport : MonoBehaviour
 
     private float verticalInput;
     private Rigidbody2D rigidbody;
+    private AudioSource audioSource;
 
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
         verticalInput = Input.GetAxis(inputAxis);
+        if (verticalInput != 0)
+        {
+            audioSource.Play();
+        }
     }
 
     // Use fixed update for physics code, because 

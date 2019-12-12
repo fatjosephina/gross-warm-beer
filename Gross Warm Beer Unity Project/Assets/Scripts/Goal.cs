@@ -8,6 +8,8 @@ public class Goal : MonoBehaviour
 {
     public GameObject winText;
     public GameObject button;
+    public AudioSource music;
+    public AudioSource cheer;
     private AudioSource audioSource;
 
     private void Start()
@@ -22,9 +24,11 @@ public class Goal : MonoBehaviour
         {
             winText.SetActive(true);
             button.SetActive(true);
+            music.Pause();
             audioSource.Play();
             Debug.Log("Entered goal!");
             GameOver.isGameOver = true;
+            cheer.Play();
         }
     }
 }

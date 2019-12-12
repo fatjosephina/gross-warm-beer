@@ -7,6 +7,9 @@ public class Explanation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("space"))
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }
